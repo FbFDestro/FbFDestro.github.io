@@ -1,0 +1,54 @@
+* {
+	maring: 0;
+	border: 0;
+	padding: 0;
+}
+
+html{
+	background-color: #eee;
+}
+
+body{
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+#cabecalho{
+	width:75%;
+	padding: 25px;
+	margin: 0 auto;
+	border-bottom: 1px dashed #ccc;
+	margin-bottom: 20px;
+}
+
+#imgLogo{
+	width:250px;
+	margin: 0 auto;
+	transition: 0.7s;
+}
+
+#imgLogo:hover{
+	opacity: 0.7;
+	transition: 0.7s;
+}
+
+#imgLogo img{
+	width: 100%;
+}
+
+#corpo{
+	margin: 0 auto;
+	width:75%;
+}
+
+#info{
+	display: inline;
+}
+
+footer{
+	text-align: center;
+	background-color: #fff;
+	border-top: 4px solid #2F9BBC;
+	padding: 5px;	
+}
