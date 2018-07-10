@@ -1,11 +1,33 @@
+@font-face {
+	font-family: nexaL;
+	src: url(fontes/nexaLight.otf);
+}
+
+@font-face {
+	font-family: nexaB;
+	src: url(fontes/nexaBold.otf);
+}
+
 * {
 	maring: 0;
 	border: 0;
 	padding: 0;
 }
 
+a{
+	color: #515151;
+	text-decoration: none;
+	transition: 0.7s;
+}
+a:hover{
+	color: #2F9BBC;
+	transition: 0.7s;
+	text-decoration: none;
+}
+
 html{
 	background-color: #eee;
+	font-family: nexaB;
 }
 
 body{
@@ -13,13 +35,20 @@ body{
 	margin: 0 auto;
 }
 
-
 #cabecalho{
 	width:75%;
 	padding: 25px;
+	padding-bottom: 5px;
 	margin: 0 auto;
 	border-bottom: 1px dashed #ccc;
 	margin-bottom: 20px;
+}
+
+#cabecalho table{
+	width: 100%;
+	color: #515151;
+	font-size: 14px;
+	font-weight: normal;
 }
 
 #imgLogo{
@@ -35,6 +64,7 @@ body{
 
 #imgLogo img{
 	width: 100%;
+	margin-bottom: 35px;
 }
 
 #corpo{
@@ -42,8 +72,54 @@ body{
 	width:75%;
 }
 
-#info{
-	display: inline;
+article {
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	background-color: #fff;
+	padding: 5px 0;
+	margin-bottom: 15px;
+}
+
+article header h2{
+	text-transform: uppercase;
+	font-size: 17px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	margin-bottom: 0px;
+}
+
+article table{
+	font-size: 14px;
+	font-family: nexaL;
+	width: 100%;
+	padding: 5px 20px;
+}
+article table td{
+	padding-bottom: 6px;
+}
+table .destaque{
+	font-family: nexaB;
+	font-size: 16px;
+}
+table .titulo {
+	padding-top:15px;
+}
+
+table .esq{
+	text-align: left;	
+}
+table .dir{
+	text-align: right;	
+	font-style: italic;
+	color: #515151;
+}
+
+table ul{
+	margin-left: 20px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+    line-height: 1.3;
 }
 
 footer{
