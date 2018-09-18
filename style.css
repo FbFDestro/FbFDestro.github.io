@@ -40,7 +40,7 @@ body{
 	top: 0;
 	left: 0;
 	opacity: 0.9;
-	width:100%;
+	width:	100%;
 	height: 65px;
 	background-color: #fff;
 	margin: 0 auto;
@@ -48,7 +48,7 @@ body{
 	margin-bottom: 20px;
 }
 #conteudoCabe{
-	width: 75%;
+	width: 980px;
 	margin: 0 auto;
 }
 
@@ -107,7 +107,7 @@ nav li a:hover {
 #corpo{
 	margin: 0 auto;
 	margin-top: 85px;
-	width:75%;
+	width:980px;
 }
 
 article {
@@ -145,6 +145,11 @@ table .titulo {
 	padding-top:15px;
 }
 
+table .titulo a{
+	text-decoration: underline;
+}
+
+
 table .esq{
 	text-align: left;	
 }
@@ -152,6 +157,10 @@ table .dir{
 	text-align: right;	
 	font-style: italic;
 	color: #515151;
+	width: 150px;
+}
+td.dir.large {
+    width: 300px;
 }
 
 table ul{
