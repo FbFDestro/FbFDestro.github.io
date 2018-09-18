@@ -90,17 +90,17 @@ nav li {
 nav li a {
 	display: block;
 	text-align: center;
-	padding: 25px 18px;
+	padding: 24px 18px;
 	text-decoration: none;
 	font-size: 14px;
-	border-bottom: 4px solid #2F9BBC;
+/*	border-bottom: 4px solid #2F9BBC;*/
 	transition: 0.7s;
 }
 
 nav li a:hover {
 	background-color: #eee;
 	color: #515151;
-	border-bottom: 3px solid #515151;
+/*	border-bottom: 3px solid #515151;*/
 	transition: 0.7s;
 }
 
