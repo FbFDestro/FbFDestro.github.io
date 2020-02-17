@@ -49,22 +49,18 @@ body {
 }
 
 #conteudoCabe {
-  width: 980px;
+  width: 80%;
+  max-width: 1000px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0 auto;
   flex-direction: row;
   align-items: stretch;
 }
 
-#cabecalho table {
-  width: 100%;
-  color: #515151;
-  font-size: 14px;
-  font-weight: normal;
-}
-
 #imgLogo {
-  width: 120px;
+  width: 115px;
   transition: 0.7s;
   align-self: flex-start;
 }
@@ -77,11 +73,6 @@ body {
 #imgLogo img {
   width: 100%;
   margin-top: 10px;
-}
-
-nav {
-  align-self: flex-end;
-  flex-basis: 100%;
 }
 
 nav ul {
@@ -107,19 +98,20 @@ nav li a {
 }
 
 nav li a:hover {
-  background-color: #eee;
+  background-color: #ddd;
   color: #515151;
   border-bottom: 4px solid #515151;
   transition: 0.7s;
 }
 
-#corpo {
+main {
   margin: 0 auto;
   margin-top: 85px;
-  width: 980px;
+  width: 80%;
+  max-width: 1000px;
 }
 
-article {
+section {
   border: 1px solid #ccc;
   border-radius: 8px;
   background-color: #fff;
@@ -127,7 +119,7 @@ article {
   margin-bottom: 15px;
 }
 
-article header h2 {
+section header h2 {
   text-transform: uppercase;
   font-size: 17px;
   border-bottom: 1px solid #ccc;
@@ -135,15 +127,28 @@ article header h2 {
   padding: 10px 20px;
 }
 
-article table {
+section table {
   font-size: 14px;
   font-family: nexaL;
   width: 100%;
-  padding: 5px 20px;
 }
 
-article table td {
+section table td {
   padding-bottom: 6px;
+}
+
+tbody {
+  width: 100%;
+}
+
+tr {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 20px;
+}
+
+td {
+  line-height: 18px;
 }
 
 table .destaque {
@@ -152,25 +157,17 @@ table .destaque {
 }
 
 table .titulo {
-  padding-top: 15px;
+  padding-top: 10px;
 }
 
 table .titulo a {
   text-decoration: underline;
 }
 
-table .esq {
-  text-align: left;
-}
 table .dir {
-  text-align: right;
   font-style: italic;
+  text-align: right;
   color: #515151;
-  width: 150px;
-}
-
-td.dir.large {
-  width: 300px;
 }
 
 table ul {
@@ -185,4 +182,35 @@ footer {
   background-color: #fff;
   border-top: 4px solid #2f9bbc;
   padding: 20px;
+}
+
+@media only screen and (max-width: 815px) {
+  #cabecalho {
+    height: auto;
+    position: relative;
+  }
+
+  #conteudoCabe {
+    flex-direction: column;
+  }
+  #imgLogo {
+    margin: 10px auto;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li a {
+    border: none;
+    height: 50px;
+    line-height: 50px;
+  }
+  nav li a:hover {
+    border: none;
+  }
+
+  main {
+    margin-top: 25px;
+  }
 }
