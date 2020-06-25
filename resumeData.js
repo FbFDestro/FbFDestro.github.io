@@ -4,7 +4,7 @@ const resume = [
     data: [
       {
         title: 'University of São Paulo',
-        rightTitle: '2017 - Dec/2021',
+        rightTitle: '2017 - Dec/2022',
         descriptions: [
           {
             info: 'Bachelor of Science in Computer Science',
