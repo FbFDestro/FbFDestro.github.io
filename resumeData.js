@@ -52,7 +52,7 @@ const resume = [
           {
             info: `Chrome extension that automatically likes or dislikes youtube videos from 
                       selected channels when you watch them. Developed mainly with Javascript 
-                      and Chrome Browser API. Published at Chrome Web Store with real users.`,
+                      and Chrome Browser API. <a href="https://fbfdestro.github.io/YourAutoLiker/">Published at Chrome Web Store</a> with real users.`,
           },
         ],
       },
